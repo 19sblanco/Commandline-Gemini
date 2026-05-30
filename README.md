@@ -6,7 +6,7 @@ Have you ever wanted to use AI in your command line, but can't afford claude cod
 
 ## how to use
 
-https://github.com/user-attachments/assets/ff7ec2e4-809e-437e-a543-5697316cfce1
+https://github.com/user-attachments/assets/d897435a-6942-4a6f-a8ff-98f8e1c160f3
 
 ## set up
 * This project uses the Gemini-2.5-Flash API, for this you need a Google Cloud Account
