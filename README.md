@@ -19,6 +19,7 @@ Have you ever wanted to use AI in your command line, but can't afford claude cod
 
 2. Install Script
 ```bash
+chmod +x install.sh
 ./install.sh
 ```
 
@@ -30,5 +31,5 @@ Have you ever wanted to use AI in your command line, but can't afford claude cod
 * **Set up required roles**
 * **Install the SDK and set up your environment**
 
-[Connect Gemini-2.5-Flash](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/start?hl=en&_gl=1*17zfjba*_ga*MTAyNTUwNjM0Mi4xNzc3NzUxOTU4*_ga_WH2QY8WWF5*czE3ODAwNjQ1MjEkbzE4JGcxJHQxNzgwMDY1MTQzJGo0JGwwJGgw#python) Note 
+[Connect Gemini-2.5-Flash](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/start?hl=en&_gl=1*17zfjba*_ga*MTAyNTUwNjM0Mi4xNzc3NzUxOTU4*_ga_WH2QY8WWF5*czE3ODAwNjQ1MjEkbzE4JGcxJHQxNzgwMDY1MTQzJGo0JGwwJGgw#python)
 

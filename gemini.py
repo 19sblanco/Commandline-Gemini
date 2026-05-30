@@ -2,6 +2,7 @@ import sys
 import threading
 import time
 import os
+import argparse
 from google import genai
 from google.genai.types import HttpOptions
 from rich.console import Console
@@ -10,15 +11,28 @@ from rich.live import Live
 
 context_path = os.path.dirname(os.path.abspath(__file__)) + "/context.txt"
 
+parser = argparse.ArgumentParser(description="Command-line Gemini Agent")
+parser.add_argument("-s", action="store_true", help="Custom flag for your functionality")
+parser.add_argument("prompt", nargs="+", help="The prompt to send")
+
 if len(sys.argv) < 2:
     print("please provide a prompt")
     sys.exit(1)
+
+args = parser.parse_args()
+
+s_flag_active = args.s
+user_prompt = " ".join(args.prompt)
+
 
 file = open(context_path, "r", encoding="utf-8")
 context = file.read()
 file.close()
 
-content = context + sys.argv[1]
+if s_flag_active:
+    context += "\n\n make your response short"
+
+content = context + "\n\n" + user_prompt
 is_waiting = True
 
 def run_spinner():
