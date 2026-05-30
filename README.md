@@ -1,5 +1,5 @@
 # Gemini command line 
-Have you ever wanted to use AI in your command line, but can't afford claude code? This custom built program lets you use Gemini-2.5-flash model in the command line
+Have you ever wanted to use AI in your command line, but can't afford claude code? This custom built program lets you use Gemini-2.5-Flash model in the command line
 
 > note: This model has no context from previous prompts. This is both a good and bad thing.
 
@@ -7,9 +7,13 @@ Have you ever wanted to use AI in your command line, but can't afford claude cod
 
 !! video of you using it
 
+!! add -s flag for small responses
+
 ## set up
 
-### steps for install in your local environment
+### steps for install
+
+***Prerequisites: To access the Gemini-2.5-Flash API, you need a Google Cloud Account***
 
 1. clone project
 
@@ -36,9 +40,15 @@ alias gemini='Commandline-Gemini/.venv/bin/python Commandline-gemini/gemini.py'
 
 ***update path based on where your Commandline-Gemini file lives***
 
+6. connect the gemini model
 
-### connect the gemini model
-https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/start?hl=en&_gl=1*17zfjba*_ga*MTAyNTUwNjM0Mi4xNzc3NzUxOTU4*_ga_WH2QY8WWF5*czE3ODAwNjQ1MjEkbzE4JGcxJHQxNzgwMDY1MTQzJGo0JGwwJGgw#python
+These are the relevant headings in the following tutorial
+* **Before you begin**
+    * this projects, as is, assumes ADC authentication
+* **Set up required roles**
+* **Install the SDK and set up your environment**
 
-use this link to set up and access the Gemini model API. Note that to access the Gemini API, you must have a Google Cloud Account and Project to connect to. After you have an account created, I recommend just creating a new project specifically for this.
+> Note: To access the Gemini API, you must have a Google Cloud Account and Project to connect to. After you have an account created, I recommend just creating a new project specifically for this.
+
+[Connect Gemini-2.5-Flash](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/start?hl=en&_gl=1*17zfjba*_ga*MTAyNTUwNjM0Mi4xNzc3NzUxOTU4*_ga_WH2QY8WWF5*czE3ODAwNjQ1MjEkbzE4JGcxJHQxNzgwMDY1MTQzJGo0JGwwJGgw#python) Note 
 
