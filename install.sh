@@ -17,7 +17,7 @@ python3 -m venv "$CURRENT_DIR/venv"
 
 # 3. Install rich to display markdown
 echo "Installing rich..."
-"$CURRENT_DIR/venv/bin/pip" install rich
+"$CURRENT_DIR/venv/bin/pip" install rich google-genai
 
 # 4. Create context.txt file
 echo "Creating context.txt..."
