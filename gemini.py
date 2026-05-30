@@ -57,12 +57,10 @@ console = Console()
 
 try:
     client = genai.Client(http_options=HttpOptions(api_version="v1"))
-    
     response = client.models.generate_content_stream(
         model="gemini-2.5-flash",
         contents=content,
     )
-
     response_iter = iter(response)
 
     try:
