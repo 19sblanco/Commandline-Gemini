@@ -4,6 +4,10 @@ Have you ever wanted to use AI in your command line, but can't afford claude cod
 
 > This project uses the Gemini-2.5-Flash model
 
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
 ## how to use
 
 https://github.com/user-attachments/assets/7ae23172-39e3-4a04-abef-3a28e1935260
