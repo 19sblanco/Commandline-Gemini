@@ -48,7 +48,7 @@ if s_flag_active:
     context += "\n\n make your response short"
 
 if g_flag_active:
-    context += "\n\n explain it from the ground up"
+    context += "\n\n explain it from the ground up, starting with the purpose"
 
 content = context + "\n\n" + user_prompt
 is_waiting = True
