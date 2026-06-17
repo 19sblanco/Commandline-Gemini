@@ -50,10 +50,10 @@ if s_flag_active:
     context += "\n\n make your response short"
 
 if g_flag_active:
-    context += "\n\n explain from the ground up: start with a high-level overview of the purpose and big picture, then dive into the details"
+    context += "\n\n explain from the ground up: start with a high-level overview of the purpose and big picture, then dive into the details. Provide examples when relevant."
 
 if d_flag_active:
-    context += "\n\n provide an in-depth, detailed explanation covering specifics, nuances, and implementation details"
+    context += "\n\n explain in detail"
 
 content = context + "\n\n" + user_prompt
 is_waiting = True
