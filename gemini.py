@@ -14,7 +14,8 @@ context_path = os.path.dirname(os.path.abspath(__file__)) + "/context.txt"
 parser = argparse.ArgumentParser(description="Command-line Gemini Agent")
 parser.add_argument("-s", action="store_true", help="Custom flag for your functionality")
 parser.add_argument("-f", type=str, help="File to ingest")
-parser.add_argument("-g", action="store_true", help="Explain from the ground up")
+parser.add_argument("-g", action="store_true", help="High-level overview first, then details")
+parser.add_argument("-d", action="store_true", help="In-depth, detailed explanation")
 parser.add_argument("prompt", nargs="*", help="The prompt to send")
 
 if len(sys.argv) < 2:
@@ -26,6 +27,7 @@ args = parser.parse_args()
 s_flag_active = args.s
 f_flag_value = args.f
 g_flag_active = args.g
+d_flag_active = args.d
 user_prompt = " ".join(args.prompt)
 
 
@@ -48,7 +50,10 @@ if s_flag_active:
     context += "\n\n make your response short"
 
 if g_flag_active:
-    context += "\n\n explain it from the ground up, starting with the purpose"
+    context += "\n\n explain from the ground up: start with a high-level overview of the purpose and big picture, then dive into the details"
+
+if d_flag_active:
+    context += "\n\n provide an in-depth, detailed explanation covering specifics, nuances, and implementation details"
 
 content = context + "\n\n" + user_prompt
 is_waiting = True
